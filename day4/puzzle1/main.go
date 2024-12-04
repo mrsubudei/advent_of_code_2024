@@ -101,13 +101,6 @@ func isRightFit(matrix [][]string, x, y int) bool {
 }
 
 func isLeftFit(matrix [][]string, x, y int) bool {
-	a := matrix[y][x-1] == "M"
-	b := matrix[y][x-2] == "A"
-	c := matrix[y][3] == "S"
-
-	_ = a
-	_ = b
-	_ = c
 	return matrix[y][x-1] == "M" &&
 		matrix[y][x-2] == "A" &&
 		matrix[y][x-3] == "S"
